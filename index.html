@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="calculator">
+		<form>
+			<input type="text" value="0" id="display" name="myText" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br>
+			<input type="button" value="&#94;" class="keys" onclick="power(2)">
+			<input type="button" value="C" class="keys" onclick="clean()">
+			<input type="button" value="&#171;" class="keys" style="width: 92px" onclick="backspace()">
+			<input type="button" value="&#47;" class="keys" onclick="displayButtonName('/')"><br>
+			<input type="button" value="&#928;" class="keys" onclick="displayPi()">
+			<input type="button" value="7" class="keys" onclick="displayButtonName('7')">
+			<input type="button" value="8" class="keys" onclick="displayButtonName('8')">
+			<input type="button" value="9" class="keys" onclick="displayButtonName('9')">
+			<input type="button" value="&#42;" class="keys" onclick="displayButtonName('*')"><br>
+			<input type="button" value="n!" class="keys" onclick="factorialOfNumber()">
+			<input type="button" value="4" class="keys" onclick="displayButtonName('4')">
+			<input type="button" value="5" class="keys" onclick="displayButtonName('5')">
+			<input type="button" value="6" class="keys" onclick="displayButtonName('6')">
+			<input type="button" value="-" class="keys" onclick="displayButtonName('-')"><br>
+			<input type="button" value="&#177;" class="keys" onclick="setNegativeNb()">
+			<input type="button" value="1" class="keys" onclick="displayButtonName('1')">
+			<input type="button" value="2" class="keys" onclick="displayButtonName('2')">
+			<input type="button" value="3" class="keys" onclick="displayButtonName('3')">
+			<input type="button" value="+" class="keys" onclick="displayButtonName('+')"><br>
+			<input type="button" value="&#40;" class="keys" onclick="displayButtonName('(')">
+			<input type="button" value="&#41;" class="keys" onclick="displayButtonName(')')">
+			<input type="button" value="0" class="keys" onclick="displayButtonName('0')">
+			<input type="button" value="." class="keys" onclick="displayButtonName('.')">
+			<input type="button" value="&#61;" class="keys" onclick="displayResult()">
+		</form>
+	</div>
+</body>
+</html>
